@@ -1,7 +1,3 @@
-# fridge-vision
-
-Repo for Fridge Vision project - ITAI 1378
-
 # Fridge Vision
 
 ## Team Members
@@ -23,7 +19,7 @@ People often forget what's in their fridge, leading to costly food waste and dup
 
 ## Solution Overview
 
-[Your 2-3 sentence solution overview goes here. Briefly describe your proposed solution.]
+Our solution is a computer vision system that detects and counts current food items in the fridge, so user would know what they already have at home when they are shopping at the grocery store.
 
 ## Technical Approach
 
