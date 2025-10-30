@@ -1,1 +1,1 @@
-Placeholder description of the datasets.
+Dataset link: https://github.com/marcusklasson/GroceryStoreDataset
