@@ -23,19 +23,22 @@ Our solution is a computer vision system that detects and counts current food it
 
 ## Technical Approach
 
-[Describe your planned technical approach. What techniques, models, or frameworks will you use? (e.g., "We will use a fine-tuned BERT model for text classification..." or "We will build a CNN using PyTorch...")]
+Our core technical approach is object detection using the YOLOv8 model. We will start with a pre-trained version and fine-tune it on our custom dataset using the Ultralytics YOLOv8 repository, which is built on PyTorch. We chose YOLOv8 because it is state-of-the-art, offering an excellent balance of speed and accuracy that is ideal for real-time applications.
 
 ## Dataset Plan
 
-- **Source:** [Where will you get the data? e.g., Kaggle, web scraping, public API]
-- **Size:** [What is the estimated size? e.g., ~10,000 images, 2GB of text data]
-- **Labels:** [What are the target labels? e.g., Bounding boxes, sentiment (positive/negative), etc.]
-- **Link:** [Link to the dataset if it is public]
+- **Source:** GroceryStoreDataSet on Github
+- **Size:** 117 MB
+- **Labels:** Bounding boxes
+- **Link:** https://github.com/marcusklasson/GroceryStoreDataset
 
 ## Metrics
 
-- **Primary Metric:** [The main metric you will use to evaluate success, e.g., mAP, F1-Score, Accuracy]
-- **Secondary Metric:** [Other metrics to track, e.g., Inference Time, Model Size, Precision]
+- **Primary Metric:** Detection Accuracy (Target: 90%+)
+- **Secondary Metrics:**
+  - **Inventory Completeness Score:** (Detected unique items / Actual unique items) $\ge$ 90%. _This measures how well our system captures the full set of items, not just accuracy per item._
+  - **Processing Time:** $< 1$ second/image
+  - **Usability Score:** Based on user feedback.
 
 ## Week-by-Week Plan
 
@@ -50,12 +53,11 @@ Our solution is a computer vision system that detects and counts current food it
 
 ## Resources Needed
 
-[List the compute, potential costs, or specific APIs you will need. e.g., "Google Colab Pro for GPU access", "OpenAI API key", "AWS S3 bucket for storage"]
+Google Colab Pro for GPU access
 
 ## Risks & Mitigation
 
-| Risk               | Probability       | Mitigation                                                         |
-| :----------------- | :---------------- | :----------------------------------------------------------------- |
-| Low accuracy       | Medium            | Use data augmentation and experiment with different architectures. |
-| Missing data       | High              | Switch to Roboflow dataset or another public alternative.          |
-| [Add another risk] | [Low/Medium/High] | [Your mitigation plan]                                             |
+| Risk         | Probability | Mitigation                                                         |
+| :----------- | :---------- | :----------------------------------------------------------------- |
+| Low accuracy | Medium      | Use data augmentation and experiment with different architectures. |
+| Missing data | High        | Switch to Roboflow dataset or another public alternative.          |
