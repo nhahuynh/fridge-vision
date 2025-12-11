@@ -67,15 +67,14 @@ Our core technical approach is object detection using the YOLOv8 model. We will 
 ## Custom Fruit Training Dataset
 
 A manually collected and organised dataset stored in:
-📂 data/
-└── 📁 New_Training_Data/
-    ├── 🍏 Golden-Delicious/
-    ├── 🥝 Kiwi/
-    ├── 🥭 Mango/
-    ├── 🍊 Oranges/
-    ├── 🍅 Tomatoes/
-    └── 🍑 peach/
-
+| Folder Name          | Description              |
+|----------------------|--------------------------|
+| **Golden-Delicious/** | Yellow apple variety     |
+| **Kiwi/**             | Kiwi fruit images        |
+| **Mango/**            | Mango fruit images       |
+| **Oranges/**          | Orange fruit images      |
+| **Tomatoes/**         | Tomato images            |
+| **peach/**            | Peach images             |
 
 
 ### Purpose
@@ -90,7 +89,7 @@ A manually collected and organised dataset stored in:
 
 ---
 
-## 3. Test Images Dataset
+Test Images Dataset
 
 Located in:
 
@@ -131,7 +130,7 @@ Includes a mix of real-world items such as:
 - Trained using **Ultralytics** framework  
 - Evaluated using custom test images and built-in model metrics
 
-### Workflow
+
 
 
 
