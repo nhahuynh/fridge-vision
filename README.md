@@ -3,6 +3,7 @@
 ## Team Members
 
 - Nha Huynh
+  **Contributions:** Managed/coordinated project tasks and deliverables. Generated code for projects and troubleshot technical issues with the code. Recorded video demo. Submitted AI log. Wrote the following section of the README: Technical Details, How to Run, Dataset, Metrics, AI usage, Improvements. 
 - Elijah Raines
 - Triet Le
 - Richard Rodriguez
@@ -53,7 +54,7 @@ Our core technical approach is object detection using the YOLOv8 model. We will 
 
 ## Resources Needed
 
-Google Colab Pro for GPU access
+Google Colab Pro for GPU access (T5 GPU)
 
 ## Risks & Mitigation
 
@@ -61,6 +62,46 @@ Google Colab Pro for GPU access
 | :----------- | :---------- | :----------------------------------------------------------------- |
 | Low accuracy | Medium      | Use data augmentation and experiment with different architectures. |
 | Missing data | High        | Switch to Roboflow dataset or another public alternative.          |
+
+
+## Technical Details
+
+### Approach
+- **Task**: Object Detection & Classification
+- **Model**: YOLOv8 
+- **Framework**: PyTorch 
+- **Key Libraries**: ultralytics, opencv, pandas, matplotlib, Pillow
+
+### System Architecture
+[Input] → [Preprocessing] → [Model] → [Post-processing] → [Output
+
+### Dataset
+
+Source: https://github.com/marcusklasson/GroceryStoreDataset (2485)
+Size: 2497 images (including manual additions)
+Classes: 81
+Split: Train: 2497 images, Test: 14 images
+
+### How to Run
+
+- Upload jupyter notebook file FridgeVision.ipynb to Google Colab workspace
+- Select T4 GPU
+- Run each cell sequentially
+
+## Performance Metrics
+
+
+==============================
+🏆 AUTOMATED RESULTS
+==============================
+Mean Average Precision (mAP@50): 83.23%
+Precision: 78.35%
+Recall:    78.89%
+==============================
+Success Cases
+
+Failed Cases
+
 
 ## Reflections
 
@@ -79,6 +120,8 @@ Team coordination also required more effort than anticipated. Syncing datasets, 
 OVERALL MODEL PERFORMANCE:
 The model performed fairly well on large, visually distinct objects, such as milk cartons and eggs. However, performance dropped with small or visually similar classes. The tomato‑vs‑apple confusion demonstrated the limits of the dataset and the need for more domain‑specific data. Despite these issues, the project showed that YOLOv8 is effective for real‑time fridge item detection when supported by strong training data.
 
+We found that performance improved significantly when the number of epochs was increased from 5 to 10. This shows that the more training runs the model experiences, the better it performs.
+
 KEY TAKEAWAYS:
 
 * High‑quality, well‑balanced datasets are just as important as model choice.  
@@ -87,3 +130,28 @@ KEY TAKEAWAYS:
 * Clear team communication helps avoid delays and repeated mistakes.  
 
 This project enhanced our understanding of object detection, dataset preparation, and model evaluation. The challenges and failures contributed significantly to the learning experience. This project significantly enhanced our understanding of object detection, dataset preparation, and model evaluation. Throughout the process, we delved deep into the complexities of each stage, allowing us to gain valuable insights. The challenges we encountered, along with the failures we faced, transformed the learning experience into something profoundly enriching. Each obstacle prompted us to rethink our strategies, experiment with different approaches, and ultimately develop more robust solutions. By reflecting on these setbacks, we were able to identify gaps in our knowledge and improve our techniques, making the entire experience not only educational but also rewarding. Overall, this project has laid a solid foundation for our future work in this field.
+
+
+## AI Usage Documentation
+See detailed log: 
+Summary:
+docs/AI_usage_log.md
+Used AI for: Understanding architectures, debugging, code generation
+Key learnings: We learned how to organize folder structure to preprocess the data for training and prediction, as well as setting up the model and do E2E results validation.
+Code attribution: Gemini AI
+
+## Future Improvements
+ - Do validation step
+ - Split images for testing and validation more appropriately
+
+## References
+1. [https://github.com/marcusklasson/GroceryStoreDataset]
+
+## License
+[MIT / Apache / Academic Use Only]
+
+## Acknowledgments
+Thanks to Professor McManus for a great semester!
+Pre-trained models from [Ultralytics]
+Dataset from [https://github.com/marcusklasson/GroceryStoreDataset]
+AI assistance from Gemini AI
