@@ -11,12 +11,11 @@
     * Created AI log
     * Created results/metrics materials
 * **Elijah Raines**
-    * Collected, organized, and cleaned the **custom fruit dataset** used for training and fine-tuning.
-    * Created structured folders for **Golden-Delicious, Kiwi, Mango, Oranges, Tomatoes, and Peach**, ensuring proper labeling and compatibility with image loaders.
-    * Developed the **Test_images** dataset used to evaluate real-world performance, including apples, oranges, grapefruit, kiwi, milk cartons, juice bottles, and peaches.
-    * Ran test-image inference and documented **model strengths, weaknesses, and misclassifications**, especially in cases where YOLO confused apples and tomatoes.
-    * Assisted with running the model in Colab, validating predictions, identifying false positives, and preparing examples for the final report.
-    * Wrote README sections describing the fruit dataset, test images, and detection results.
+* Collected and organized the custom fruit training dataset (Golden-Delicious, Kiwi, Mango, Oranges, Tomatoes, Peach).
+* Created the Test_images folder for evaluating the model on real-world items.
+* Ran model predictions on test images and noted detection accuracy and misclassifications.
+* Assisted with running the model in Colab and checking for false positives.
+* Wrote README sections covering the fruit dataset, test images, and detection results.
 * **Triet Le**
 * **Richard Rodriguez**
 
