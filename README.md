@@ -64,7 +64,7 @@ Our core technical approach is object detection using the YOLOv8 model. We will 
 | 14 (Nov 27) | Final testing / documentation   | Everything done     |
 | 15 (Dec 4)  | Present project                 | 🎉 Presentation day |
 
-Custom Fruit Training Dataset
+## 2. Custom Fruit Training Dataset
 
 A manually collected and organised dataset stored in:
 
@@ -76,6 +76,9 @@ data/New_Training_Data/
 ├── Tomatoes/
 └── peach/
 
+yaml
+Copy code
+
 ### Purpose
 - Provide additional **clean, well-labeled images** for common fridge fruits  
 - Improve detection and classification performance  
@@ -83,16 +86,20 @@ data/New_Training_Data/
 
 ### Notes
 - Each folder represents a class label  
-- Images were cleaned, resized, and organized consistently  
-- Dataset supports both classification and YOLO preprocessing
+- Images were cleaned, resized, and organised consistently  
+- The dataset supports both classification and YOLO preprocessing
 
 ---
-Test Images Dataset
+
+## 3. Test Images Dataset
 
 Located in:
+
 data/Test_images/
 
 markdown
+Copy code
+
 
 Includes a mix of real-world items such as:
 
@@ -107,17 +114,30 @@ Includes a mix of real-world items such as:
 - Packaged items for false-positive testing
 
 ### Purpose
-- Evaluate whether the model generalizes to **real fridge photos**  
+- Evaluate whether the model generalises to **real fridge photos**  
 - Identify problems such as:
   - Similar fruit confusion (e.g., tomatoes vs apples)
-  - Low-light or angled images lowering confidence
+  - Low-light or angled images lower confidence
   - Packaged items triggering incorrect predictions
 
 ### Example Findings
 - Fruit classes with many training samples were detected accurately  
-- Items with similar shapes/colors produced confusion  
+- Items with similar shapes/colours produced confusion  
 - Non-fruit items (milk, juice) helped identify false positives  
 - Testing images revealed where the dataset needed improvement
+
+---
+
+# 🧠 Technical Approach
+
+### Model
+- **YOLOv8**  
+- Pretrained weights fine-tuned on grocery and custom fruit images  
+- Trained using **Ultralytics** framework  
+- Evaluated using custom test images and built-in model metrics
+
+### Workflow
+
 
 
 
