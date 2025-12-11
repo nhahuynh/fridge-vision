@@ -64,17 +64,18 @@ Our core technical approach is object detection using the YOLOv8 model. We will 
 | 14 (Nov 27) | Final testing / documentation   | Everything done     |
 | 15 (Dec 4)  | Present project                 | 🎉 Presentation day |
 
-## 2. Custom Fruit Training Dataset
+## Custom Fruit Training Dataset
 
 A manually collected and organised dataset stored in:
-**data/**
-- **New_Training_Data/**
-  - Golden-Delicious/
-  - Kiwi/
-  - Mango/
-  - Oranges/
-  - Tomatoes/
-  - peach/
+📂 data/
+└── 📁 New_Training_Data/
+    ├── 🍏 Golden-Delicious/
+    ├── 🥝 Kiwi/
+    ├── 🥭 Mango/
+    ├── 🍊 Oranges/
+    ├── 🍅 Tomatoes/
+    └── 🍑 peach/
+
 
 
 ### Purpose
