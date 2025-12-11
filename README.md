@@ -83,10 +83,10 @@ Google Colab Pro for GPU access (T5 GPU)
 
 ### Dataset
 
-Source: https://github.com/marcusklasson/GroceryStoreDataset (2485)
-Size: 2497 images (including manual additions)
-Classes: 81
-Split: Train: 2497 images, Test: 14 images
+- Source: https://github.com/marcusklasson/GroceryStoreDataset (2485)
+- Size: 2497 images (including manual additions)
+- Classes: 81
+- Split: Train: 2497 images, Test: 14 images
 
 ### How to Run
 
@@ -118,20 +118,20 @@ Fridge Vision Project Reflection
 
 This Fridge Vision project was an exciting hands-on opportunity to explore real-world computer vision challenges using YOLOv8. Throughout development, we encountered both technical obstacles and time-management struggles that ultimately shaped the outcome of the model.
 
-TECHNICAL CHALLENGES:
+**TECHNICAL CHALLENGES**:
 One major challenge was learning and fine‑tuning YOLOv8 for object detection. Although powerful, the model required multiple training sessions to reduce overfitting, improve predictions, and understand how hyperparameters impacted performance. Working with the GroceryStoreDataset also posed limitations because it did not fully match real fridge environments. Issues such as class imbalance, poor lighting, clutter, and occlusion required additional data cleaning and augmentation.
 A key performance limitation was the model’s inability to reliably distinguish tomatoes from apples. Both share similar shape, color, and texture, so without enough diverse training images, YOLOv8 tended to classify both as apples. The dataset lacked enough tomato examples from different angles and lighting conditions, which prevented the model from learning subtle visual differences. This resulted in frequent misclassification and highlighted how important balanced, high‑quality training data is.
 
-TIME MANAGEMENT CHALLENGES:
+**TIME MANAGEMENT CHALLENGES**:
 The project timeline was organized week by week, but actual development rarely aligned perfectly with the plan. Model training and debugging consistently required more time than expected, forcing adjustments to milestones. Another challenge was balancing deeper experimentations, such as testing alternative models or advanced augmentation, against tight deadlines. Learning to prioritize core functionality over perfection was a key part of staying on track.
 Team coordination also required more effort than anticipated. Syncing datasets, sharing updates, and consolidating progress took additional time, but improved communication helped the group work more efficiently.
 
-OVERALL MODEL PERFORMANCE:
+**OVERALL MODEL PERFORMANCE**:
 The model performed fairly well on large, visually distinct objects, such as milk cartons and eggs. However, performance dropped with small or visually similar classes. The tomato‑vs‑apple confusion demonstrated the limits of the dataset and the need for more domain‑specific data. Despite these issues, the project showed that YOLOv8 is effective for real‑time fridge item detection when supported by strong training data.
 
 We found that performance improved significantly when the number of epochs was increased from 5 to 10. This shows that the more training runs the model experiences, the better it performs.
 
-KEY TAKEAWAYS:
+**KEY TAKEAWAYS**:
 
 * High‑quality, well‑balanced datasets are just as important as model choice.  
 * Real-world environments introduce unique challenges like occlusion and poor lighting.  
@@ -160,7 +160,7 @@ Code attribution: Gemini AI
 [MIT / Apache / Academic Use Only]
 
 ## Acknowledgments
-Thanks to Professor McManus for a great semester!
-Pre-trained models from [Ultralytics]
-Dataset from [https://github.com/marcusklasson/GroceryStoreDataset]
-AI assistance from Gemini AI
+- Thanks to Professor McManus for a great semester!
+- Pre-trained models from [Ultralytics]
+- Dataset from [https://github.com/marcusklasson/GroceryStoreDataset]
+- AI assistance from Gemini AI
