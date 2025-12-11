@@ -70,12 +70,12 @@ A manually collected and organised dataset stored in:
 
 data/
 └── New_Training_Data/
-├── Golden-Delicious/
-├── Kiwi/
-├── Mango/
-├── Oranges/
-├── Tomatoes/
-└── peach/...
+    ├── Golden-Delicious/
+    ├── Kiwi/
+    ├── Mango/
+    ├── Oranges/
+    ├── Tomatoes/
+    └── peach/
 
 
 
