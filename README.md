@@ -11,6 +11,12 @@
     * Created AI log
     * Created results/metrics materials
 * **Elijah Raines**
+    * Collected, organized, and cleaned the **custom fruit dataset** used for training and fine-tuning.
+    * Created structured folders for **Golden-Delicious, Kiwi, Mango, Oranges, Tomatoes, and Peach**, ensuring proper labeling and compatibility with image loaders.
+    * Developed the **Test_images** dataset used to evaluate real-world performance, including apples, oranges, grapefruit, kiwi, milk cartons, juice bottles, and peaches.
+    * Ran test-image inference and documented **model strengths, weaknesses, and misclassifications**, especially in cases where YOLO confused apples and tomatoes.
+    * Assisted with running the model in Colab, validating predictions, identifying false positives, and preparing examples for the final report.
+    * Wrote README sections describing the fruit dataset, test images, and detection results.
 * **Triet Le**
 * **Richard Rodriguez**
 
@@ -57,6 +63,63 @@ Our core technical approach is object detection using the YOLOv8 model. We will 
 | 13 (Nov 20) | Create demo / video             | Demo ready          |
 | 14 (Nov 27) | Final testing / documentation   | Everything done     |
 | 15 (Dec 4)  | Present project                 | 🎉 Presentation day |
+
+Custom Fruit Training Dataset
+
+A manually collected and organised dataset stored in:
+
+data/New_Training_Data/
+├── Golden-Delicious/
+├── Kiwi/
+├── Mango/
+├── Oranges/
+├── Tomatoes/
+└── peach/
+
+### Purpose
+- Provide additional **clean, well-labeled images** for common fridge fruits  
+- Improve detection and classification performance  
+- Address class imbalance and missing fruit categories in the original dataset  
+
+### Notes
+- Each folder represents a class label  
+- Images were cleaned, resized, and organized consistently  
+- Dataset supports both classification and YOLO preprocessing
+
+---
+Test Images Dataset
+
+Located in:
+data/Test_images/
+
+markdown
+
+Includes a mix of real-world items such as:
+
+- Apples (multiple lighting conditions)
+- Oranges  
+- Peaches  
+- Mango  
+- Kiwi  
+- Grapefruit  
+- Milk carton  
+- Orange juice bottle  
+- Packaged items for false-positive testing
+
+### Purpose
+- Evaluate whether the model generalizes to **real fridge photos**  
+- Identify problems such as:
+  - Similar fruit confusion (e.g., tomatoes vs apples)
+  - Low-light or angled images lowering confidence
+  - Packaged items triggering incorrect predictions
+
+### Example Findings
+- Fruit classes with many training samples were detected accurately  
+- Items with similar shapes/colors produced confusion  
+- Non-fruit items (milk, juice) helped identify false positives  
+- Testing images revealed where the dataset needed improvement
+
+
 
 ## Resources Needed
 
