@@ -67,22 +67,23 @@ Google Colab Pro for GPU access
 Fridge Vision Project Reflection
 
 This Fridge Vision project was an exciting hands-on opportunity to explore real-world computer vision challenges using YOLOv8. Throughout development, we encountered both technical obstacles and time-management struggles that ultimately shaped the outcome of the model.
-TECHNICAL CHALLENGES
+
+TECHNICAL CHALLENGES:
 One major challenge was learning and fine‑tuning YOLOv8 for object detection. Although powerful, the model required multiple training sessions to reduce overfitting, improve predictions, and understand how hyperparameters impacted performance. Working with the GroceryStoreDataset also posed limitations because it did not fully match real fridge environments. Issues such as class imbalance, poor lighting, clutter, and occlusion required additional data cleaning and augmentation.
 A key performance limitation was the model’s inability to reliably distinguish tomatoes from apples. Both share similar shape, color, and texture, so without enough diverse training images, YOLOv8 tended to classify both as apples. The dataset lacked enough tomato examples from different angles and lighting conditions, which prevented the model from learning subtle visual differences. This resulted in frequent misclassification and highlighted how important balanced, high‑quality training data is.
 
-TIME MANAGEMENT CHALLENGES
+TIME MANAGEMENT CHALLENGES:
 The project timeline was organized week by week, but actual development rarely aligned perfectly with the plan. Model training and debugging consistently required more time than expected, forcing adjustments to milestones. Another challenge was balancing deeper experimentations, such as testing alternative models or advanced augmentation, against tight deadlines. Learning to prioritize core functionality over perfection was a key part of staying on track.
 Team coordination also required more effort than anticipated. Syncing datasets, sharing updates, and consolidating progress took additional time, but improved communication helped the group work more efficiently.
  
-OVERALL MODEL PERFORMANCE
+OVERALL MODEL PERFORMANCE:
 The model performed fairly well on large, visually distinct objects, such as milk cartons and eggs. However, performance dropped with small or visually similar classes. The tomato‑vs‑apple confusion demonstrated the limits of the dataset and the need for more domain‑specific data. Despite these issues, the project showed that YOLOv8 is effective for real‑time fridge item detection when supported by strong training data.
 
-KEY TAKEAWAYS
-• High‑quality, well‑balanced datasets are just as important as model choice.  
-• Real-world environments introduce unique challenges like occlusion and poor lighting.  
-• Flexible planning is essential because training and debugging often take longer than expected.  
-• Clear team communication helps avoid delays and repeated mistakes.  
+KEY TAKEAWAYS:
+
+* High‑quality, well‑balanced datasets are just as important as model choice.  
+* Real-world environments introduce unique challenges like occlusion and poor lighting.  
+* Flexible planning is essential because training and debugging often take longer than expected.  
+* Clear team communication helps avoid delays and repeated mistakes.  
 
 This project enhanced our understanding of object detection, dataset preparation, and model evaluation. The challenges and failures contributed significantly to the learning experience. This project significantly enhanced our understanding of object detection, dataset preparation, and model evaluation. Throughout the process, we delved deep into the complexities of each stage, allowing us to gain valuable insights. The challenges we encountered, along with the failures we faced, transformed the learning experience into something profoundly enriching. Each obstacle prompted us to rethink our strategies, experiment with different approaches, and ultimately develop more robust solutions. By reflecting on these setbacks, we were able to identify gaps in our knowledge and improve our techniques, making the entire experience not only educational but also rewarding. Overall, this project has laid a solid foundation for our future work in this field.
-
