@@ -68,7 +68,8 @@ Our core technical approach is object detection using the YOLOv8 model. We will 
 
 A manually collected and organised dataset stored in:
 
-data/New_Training_Data/
+data/
+└── New_Training_Data/
 ├── Golden-Delicious/
 ├── Kiwi/
 ├── Mango/
@@ -76,8 +77,7 @@ data/New_Training_Data/
 ├── Tomatoes/
 └── peach/
 
-yaml
-Copy code
+
 
 ### Purpose
 - Provide additional **clean, well-labeled images** for common fridge fruits  
@@ -96,10 +96,6 @@ Copy code
 Located in:
 
 data/Test_images/
-
-markdown
-Copy code
-
 
 Includes a mix of real-world items such as:
 
