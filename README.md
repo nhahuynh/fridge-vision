@@ -104,11 +104,13 @@ Google Colab Pro for GPU access (T5 GPU)
 | **Precision** | 78.35% |
 | **Recall** | 78.89% |
 
-Success Cases
+#### Success Cases
+
 ![Apple prediction](https://github.com/nhahuynh/fridge-vision/blob/main/results/images/apple_prediction2.png)
 ![Orange prediction](https://github.com/nhahuynh/fridge-vision/blob/main/results/images/orange_prediction.png)
 
-Failed Cases
+#### Failed Cases
+
 ![Failed donut prediction](https://github.com/nhahuynh/fridge-vision/blob/main/results/images/donut_prediction_failed.png)
 ![Failed apple prediction](https://github.com/nhahuynh/fridge-vision/blob/main/results/images/mango_prediction_failed.png)
 
@@ -142,12 +144,10 @@ This project enhanced our understanding of object detection, dataset preparation
 
 
 ## AI Usage Documentation
-See detailed log: 
-Summary:
-docs/AI_usage_log.md
-Used AI for: Understanding architectures, debugging, code generation
-Key learnings: We learned how to organize folder structure to preprocess the data for training and prediction, as well as setting up the model and do E2E results validation.
-Code attribution: Gemini AI
+- See detailed log: docs/AI_usage_log.md
+- Used AI for: Understanding architectures, debugging, code generation
+- Key learnings: We learned how to organize folder structure to preprocess the data for training and prediction, as well as setting up the model and do E2E results validation.
+- Code attribution: Gemini AI
 
 ## Future Improvements
  - Do validation step
