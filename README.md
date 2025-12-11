@@ -65,7 +65,8 @@ Our core technical approach is object detection using the YOLOv8 model. We will 
 
 ## Custom Fruit Training Dataset
 
-A manually collected and organised dataset stored in: 
+A manually collected and organised dataset stored in: [data/New_Training_Data](data/New_Training_Data/)
+
 | Folder Name          | Description              |
 |----------------------|--------------------------|
 | **Golden-Delicious/** | Yellow apple variety     |
