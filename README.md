@@ -67,15 +67,15 @@ Our core technical approach is object detection using the YOLOv8 model. We will 
 ## 2. Custom Fruit Training Dataset
 
 A manually collected and organised dataset stored in:
+**data/**
+- **New_Training_Data/**
+  - Golden-Delicious/
+  - Kiwi/
+  - Mango/
+  - Oranges/
+  - Tomatoes/
+  - peach/
 
-data/
-└── New_Training_Data/
-    ├── Golden-Delicious/
-    ├── Kiwi/
-    ├── Mango/
-    ├── Oranges/
-    ├── Tomatoes/
-    └── peach/
 
 ### Purpose
 - Provide additional **clean, well-labeled images** for common fridge fruits  
