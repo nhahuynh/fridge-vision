@@ -93,7 +93,6 @@ Test Images Dataset
 
 Located in: [data/Test_images](data/Test_images/)
 
-
 Includes a mix of real-world items such as:
 
 - Apples (multiple lighting conditions)
@@ -105,6 +104,7 @@ Includes a mix of real-world items such as:
 - Milk carton  
 - Orange juice bottle  
 - Packaged items for false-positive testing
+---
 
 ### Purpose
 - Evaluate whether the model generalises to **real fridge photos**  
