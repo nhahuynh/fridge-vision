@@ -2,11 +2,17 @@
 
 ## Team Members
 
-- Nha Huynh
-  **Contributions:** Managed/coordinated project tasks and deliverables. Generated code for projects and troubleshot technical issues with the code. Recorded video demo. Submitted AI log. Wrote the following section of the README: Technical Details, How to Run, Dataset, Metrics, AI usage, Improvements. 
-- Elijah Raines
-- Triet Le
-- Richard Rodriguez
+* **Nha Huynh**
+    * Oversaw project and coordinated tasks/deliverables.
+    * Generated code and troubleshot technical issues.
+    * Recorded video demo.
+    * Created AI log and results/metrics materials.
+    * Wrote README sections (Technical Details, How to Run, Dataset, Metrics, AI usage, Improvements).
+    * Created AI log
+    * Created results/metrics materials
+* **Elijah Raines**
+* **Triet Le**
+* **Richard Rodriguez**
 
 ## Tier Selection
 
@@ -90,18 +96,21 @@ Split: Train: 2497 images, Test: 14 images
 
 ## Performance Metrics
 
+### 🏆 AUTOMATED RESULTS
 
-==============================
-🏆 AUTOMATED RESULTS
-==============================
-Mean Average Precision (mAP@50): 83.23%
-Precision: 78.35%
-Recall:    78.89%
-==============================
+| Metric | Score |
+| :--- | :--- |
+| **mAP@50** | 83.23% |
+| **Precision** | 78.35% |
+| **Recall** | 78.89% |
+
 Success Cases
+![Apple prediction](https://github.com/nhahuynh/fridge-vision/blob/main/results/images/apple_prediction2.png)
+![Orange prediction](https://github.com/nhahuynh/fridge-vision/blob/main/results/images/orange_prediction.png)
 
 Failed Cases
-
+![Failed donut prediction](https://github.com/nhahuynh/fridge-vision/blob/main/results/images/donut_prediction_failed.png)
+![Failed apple prediction](https://github.com/nhahuynh/fridge-vision/blob/main/results/images/mango_prediction_failed.png)
 
 ## Reflections
 
