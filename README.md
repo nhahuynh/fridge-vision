@@ -75,7 +75,7 @@ A key performance limitation was the model’s inability to reliably distinguish
 TIME MANAGEMENT CHALLENGES:
 The project timeline was organized week by week, but actual development rarely aligned perfectly with the plan. Model training and debugging consistently required more time than expected, forcing adjustments to milestones. Another challenge was balancing deeper experimentations, such as testing alternative models or advanced augmentation, against tight deadlines. Learning to prioritize core functionality over perfection was a key part of staying on track.
 Team coordination also required more effort than anticipated. Syncing datasets, sharing updates, and consolidating progress took additional time, but improved communication helped the group work more efficiently.
- 
+
 OVERALL MODEL PERFORMANCE:
 The model performed fairly well on large, visually distinct objects, such as milk cartons and eggs. However, performance dropped with small or visually similar classes. The tomato‑vs‑apple confusion demonstrated the limits of the dataset and the need for more domain‑specific data. Despite these issues, the project showed that YOLOv8 is effective for real‑time fridge item detection when supported by strong training data.
 
