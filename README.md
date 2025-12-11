@@ -77,8 +77,6 @@ data/
     ├── Tomatoes/
     └── peach/
 
-
-
 ### Purpose
 - Provide additional **clean, well-labeled images** for common fridge fruits  
 - Improve detection and classification performance  
