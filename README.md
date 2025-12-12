@@ -12,12 +12,12 @@
     * Created results/metrics materials
 * **Elijah Raines**
     * Collected and organized the custom fruit training dataset (Golden-Delicious, Kiwi, Mango, Oranges, Tomatoes, Peach).
-    *  Created the Test_images folder for evaluating the model on real-world items.
-    *  Ran model predictions on test images and noted detection accuracy and misclassifications.
+    * Created the Test_images folder for evaluating the model on real-world items.
+    * Ran model predictions on test images and noted detection accuracy and misclassifications.
     * Assisted with running the model in Colab and checking for false positives.
     * Wrote README sections covering the fruit dataset, test images, and detection results.
 * **Triet Le**
-    * Proposal based on origial SOW
+    * Proposal based on original SOW
     * Presentation creation with notes from team
     * Reflections creation with notes from team
 * **Richard Rodriguez**
