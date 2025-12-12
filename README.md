@@ -200,6 +200,10 @@ Google Colab Pro for GPU access (T4 GPU)
 ![Failed donut prediction](https://github.com/nhahuynh/fridge-vision/blob/main/results/images/donut_prediction_failed.png)
 ![Failed apple prediction](https://github.com/nhahuynh/fridge-vision/blob/main/results/images/mango_prediction_failed.png)
 
+## Demo Video
+https://drive.google.com/file/d/1pUnDDA4kwknCO_mYSJpW__mWYeC_Gzz7/view?usp=sharing
+
+
 ## Reflections
 
 Fridge Vision Project Reflection
