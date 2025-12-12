@@ -26,6 +26,7 @@
   - Ensured README formating consistancy
   - Code testing in Colab and image dataset gathering
   - GitHub documentation updates
+  - Audio Voice over using the ClipChamp text to speech AI tool
 
 ## Tier Selection
 
