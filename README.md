@@ -2,29 +2,30 @@
 
 ## Team Members
 
-* **Nha Huynh**
-    * Oversaw project and coordinated tasks/deliverables.
-    * Generated code and troubleshot technical issues.
-    * Recorded video demo.
-    * Created AI log and results/metrics materials.
-    * Wrote README sections (Technical Details, How to Run, Dataset, Metrics, AI usage, Improvements).
-    * Created AI log
-    * Created results/metrics materials
-* **Elijah Raines**
-    * Collected and organized the custom fruit training dataset (Golden-Delicious, Kiwi, Mango, Oranges, Tomatoes, Peach).
-    * Created the Test_images folder for evaluating the model on real-world items.
-    * Ran model predictions on test images and noted detection accuracy and misclassifications.
-    * Assisted with running the model in Colab and checking for false positives.
-    * Wrote README sections covering the fruit dataset, test images, and detection results.
-* **Triet Le**
-    * Proposal based on original SOW
-    * Presentation creation with notes from team
-    * Reflections creation with notes from team
-* **Richard Rodriguez**
-    * Created original scope of work and timeline
-    * Ensured README formating consistancy
-    * Code testing in Colab and image dataset gathering 
-    * GitHub documentation updates
+- **Nha Huynh**
+  - Oversaw project and coordinated tasks/deliverables.
+  - Set up github repository following project guidelines
+  - Generated code and troubleshot technical issues.
+  - Recorded video demo.
+  - Created AI log and results/metrics materials.
+  - Wrote README sections (Technical Details, How to Run, Dataset, Metrics, AI usage, Improvements).
+  - Created AI log
+  - Created results/metrics materials
+- **Elijah Raines**
+  - Collected and organized the custom fruit training dataset (Golden-Delicious, Kiwi, Mango, Oranges, Tomatoes, Peach).
+  - Created the Test_images folder for evaluating the model on real-world items.
+  - Ran model predictions on test images and noted detection accuracy and misclassifications.
+  - Assisted with running the model in Colab and checking for false positives.
+  - Wrote README sections covering the fruit dataset, test images, and detection results.
+- **Triet Le**
+  - Proposal based on original SOW
+  - Presentation creation with notes from team
+  - Reflections creation with notes from team
+- **Richard Rodriguez**
+  - Created original scope of work and timeline
+  - Ensured README formating consistancy
+  - Code testing in Colab and image dataset gathering
+  - GitHub documentation updates
 
 ## Tier Selection
 
@@ -74,24 +75,25 @@ Our core technical approach is object detection using the YOLOv8 model. We will 
 
 A manually collected and organised dataset stored in: [data/New_Training_Data](data/New_Training_Data/)
 
-| Folder Name          | Description              |
-|----------------------|--------------------------|
-| **Golden-Delicious/** | Yellow apple variety     |
-| **Kiwi/**             | Kiwi fruit images        |
-| **Mango/**            | Mango fruit images       |
-| **Oranges/**          | Orange fruit images      |
-| **Tomatoes/**         | Tomato images            |
-| **peach/**            | Peach images             |
-
+| Folder Name           | Description          |
+| --------------------- | -------------------- |
+| **Golden-Delicious/** | Yellow apple variety |
+| **Kiwi/**             | Kiwi fruit images    |
+| **Mango/**            | Mango fruit images   |
+| **Oranges/**          | Orange fruit images  |
+| **Tomatoes/**         | Tomato images        |
+| **peach/**            | Peach images         |
 
 ### Purpose
-- Provide additional **clean, well-labeled images** for common fridge fruits  
-- Improve detection and classification performance  
-- Address class imbalance and missing fruit categories in the original dataset  
+
+- Provide additional **clean, well-labeled images** for common fridge fruits
+- Improve detection and classification performance
+- Address class imbalance and missing fruit categories in the original dataset
 
 ### Notes
-- Each folder represents a class label  
-- Images were cleaned, resized, and organised consistently  
+
+- Each folder represents a class label
+- Images were cleaned, resized, and organised consistently
 - The dataset supports both classification and YOLO preprocessing
 
 ---
@@ -103,27 +105,30 @@ Located in: [data/Test_images](data/Test_images/)
 Includes a mix of real-world items such as:
 
 - Apples (multiple lighting conditions)
-- Oranges  
-- Peaches  
-- Mango  
-- Kiwi  
-- Grapefruit  
-- Milk carton  
-- Orange juice bottle  
+- Oranges
+- Peaches
+- Mango
+- Kiwi
+- Grapefruit
+- Milk carton
+- Orange juice bottle
 - Packaged items for false-positive testing
+
 ---
 
 ### Purpose
-- Evaluate whether the model generalises to **real fridge photos**  
+
+- Evaluate whether the model generalises to **real fridge photos**
 - Identify problems such as:
   - Similar fruit confusion (e.g., tomatoes vs apples)
   - Low-light or angled images lower confidence
   - Packaged items triggering incorrect predictions
 
 ### Example Findings
-- Fruit classes with many training samples were detected accurately  
-- Items with similar shapes/colours produced confusion  
-- Non-fruit items (milk, juice) helped identify false positives  
+
+- Fruit classes with many training samples were detected accurately
+- Items with similar shapes/colours produced confusion
+- Non-fruit items (milk, juice) helped identify false positives
 - Testing images revealed where the dataset needed improvement
 
 ---
@@ -131,19 +136,15 @@ Includes a mix of real-world items such as:
 # 🧠 Technical Approach
 
 ### Model
-- **YOLOv8**  
-- Pretrained weights fine-tuned on grocery and custom fruit images  
-- Trained using **Ultralytics** framework  
+
+- **YOLOv8**
+- Pretrained weights fine-tuned on grocery and custom fruit images
+- Trained using **Ultralytics** framework
 - Evaluated using custom test images and built-in model metrics
-
-
-
-
-
 
 ## Resources Needed
 
-Google Colab Pro for GPU access (T5 GPU)
+Google Colab Pro for GPU access (T4 GPU)
 
 ## Risks & Mitigation
 
@@ -152,16 +153,17 @@ Google Colab Pro for GPU access (T5 GPU)
 | Low accuracy | Medium      | Use data augmentation and experiment with different architectures. |
 | Missing data | High        | Switch to Roboflow dataset or another public alternative.          |
 
-
 ## Technical Details
 
 ### Approach
+
 - **Task**: Object Detection & Classification
-- **Model**: YOLOv8 
-- **Framework**: PyTorch 
+- **Model**: YOLOv8
+- **Framework**: PyTorch
 - **Key Libraries**: ultralytics, opencv, pandas, matplotlib, Pillow
 
 ### System Architecture
+
 [Input] → [Preprocessing] → [Model] → [Post-processing] → [Output
 
 ### Dataset
@@ -174,18 +176,18 @@ Google Colab Pro for GPU access (T5 GPU)
 ### How to Run
 
 - Upload jupyter notebook file FridgeVision.ipynb to Google Colab workspace
-- Select T4 GPU
+- Select T4 GPU runtime
 - Run each cell sequentially
 
 ## Performance Metrics
 
 ### 🏆 AUTOMATED RESULTS
 
-| Metric | Score |
-| :--- | :--- |
-| **mAP@50** | 83.23% |
+| Metric        | Score  |
+| :------------ | :----- |
+| **mAP@50**    | 83.23% |
 | **Precision** | 78.35% |
-| **Recall** | 78.89% |
+| **Recall**    | 78.89% |
 
 #### Success Cases
 
@@ -218,31 +220,35 @@ We found that performance improved significantly when the number of epochs was i
 
 **KEY TAKEAWAYS**:
 
-* High‑quality, well‑balanced datasets are just as important as model choice.  
-* Real-world environments introduce unique challenges like occlusion and poor lighting.  
-* Flexible planning is essential because training and debugging often take longer than expected.  
-* Clear team communication helps avoid delays and repeated mistakes.  
+- High‑quality, well‑balanced datasets are just as important as model choice.
+- Real-world environments introduce unique challenges like occlusion and poor lighting.
+- Flexible planning is essential because training and debugging often take longer than expected.
+- Clear team communication helps avoid delays and repeated mistakes.
 
 This project enhanced our understanding of object detection, dataset preparation, and model evaluation. The challenges and failures contributed significantly to the learning experience. This project significantly enhanced our understanding of object detection, dataset preparation, and model evaluation. Throughout the process, we delved deep into the complexities of each stage, allowing us to gain valuable insights. The challenges we encountered, along with the failures we faced, transformed the learning experience into something profoundly enriching. Each obstacle prompted us to rethink our strategies, experiment with different approaches, and ultimately develop more robust solutions. By reflecting on these setbacks, we were able to identify gaps in our knowledge and improve our techniques, making the entire experience not only educational but also rewarding. Overall, this project has laid a solid foundation for our future work in this field.
 
-
 ## AI Usage Documentation
-- See detailed log: docs/AI_usage_log.md
+
+- See detailed log: [https://github.com/nhahuynh/fridge-vision/blob/main/docs/AI_usage_log.md]
 - Used AI for: Understanding architectures, debugging, code generation
 - Key learnings: We learned how to organize folder structure to preprocess the data for training and prediction, as well as setting up the model and do E2E results validation.
 - Code attribution: Gemini AI
 
 ## Future Improvements
- - Do validation step
- - Split images for testing and validation more appropriately
+
+- Do validation step
+- Split images for testing and validation more appropriately
 
 ## References
+
 1. [https://github.com/marcusklasson/GroceryStoreDataset]
 
 ## License
+
 [MIT / Apache / Academic Use Only]
 
 ## Acknowledgments
+
 - Thanks to Professor McManus for a great semester!
 - Pre-trained models from [Ultralytics]
 - Dataset from [https://github.com/marcusklasson/GroceryStoreDataset]
